@@ -1,16 +1,30 @@
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-nav{
+.container-fluid{
     display: flex;
     flex-direction: row;
- row-gap: 30px;
-    }
-    .logo{
-        box-sizing: border-box;
-     }
+    align-items: center;
+}
 
+.logo{
+width: 10rem;
+}
+
+.navbar-collapse{
+    display: flex;
+    flex: content;
+    justify-content: end;
+    height: fit-content;
+    align-content:baseline;
+    gap: 7px;
+}
+button{
+    padding: 0.2rem
+}
+nav{
     
+}
