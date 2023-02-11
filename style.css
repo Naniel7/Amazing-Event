@@ -7,54 +7,52 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.container-fluid {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .logo {
   width: 15rem;
   margin: 1rem;
 }
 
 .navbar-collapse {
-  display: flex;
-  flex: content;
   justify-content: end;
   margin-right: 2rem;
-  gap: 1rem;
-}
-
-.navbar-toggler {
-  text-transform: uppercase;
-  font-size: large;
-  padding: 0.2rem 0.4rem;
 }
 
 nav {
   background-color: #f1faee;
 }
 
-h2 {
+h1 {
   text-transform: uppercase;
-  font-size: 3rem;
 }
 
 .rule {
-    
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  margin:1rem;
 }
+
+a .rule{
+height: 10rem;
+}
+
 
 .checkbox-container {
-    background-color: #a8dadc;
+  background-color: #a8dadc;
   display: flex;
   justify-content: space-around;
-font-size: x-large;
+  font-size: x-large;
 }
 
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0rem;
+}
 
+.navbar-nav {
+    gap: 20px;
+    font-size: 20px;
+}
 
 /* e63946
 f1faee
