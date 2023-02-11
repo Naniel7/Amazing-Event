@@ -2,16 +2,18 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Jockey One', sans-serif;
 }
 
 .container-fluid{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
+   }
 
 .logo{
 width: 10rem;
+text-transform: uppercase;
 }
 
 .navbar-collapse{
@@ -22,9 +24,21 @@ width: 10rem;
     align-content:baseline;
     gap: 7px;
 }
+
+.navbar-toggler{
+    text-transform: uppercase;
+}
+
 button{
-    padding: 0.2rem
+    padding: 0.1rem 0.2rem;
 }
+
 nav{
-    
+    background-color: #f1faee;
 }
+
+/* e63946
+f1faee
+a8dadc
+457b9d
+1d3557 */
