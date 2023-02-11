@@ -87,12 +87,10 @@ h1 {
   align-items: center;
  }
 
-label{
-  display: flex !important;
-  align-items: center;
-font-size: large;
+.price-container{
+  display: flex;
+  justify-content: space-around;
 }
-
 
 
 
