@@ -89,11 +89,31 @@ h1 {
 
 .price-container{
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  align-items: baseline;
+  }
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  background-color: #1d3557;
+  
+}
+.social-media{
+  display: flex;
+  height: 5.1rem
 }
 
+footer i{
+  color: #fff;
+  margin: 1rem;
+}
 
-
+footer p{
+  font-size: xx-large ;
+  color: #fff;
+  margin-right: 1rem;
+}
 
 
 /* e63946
