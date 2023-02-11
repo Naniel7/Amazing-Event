@@ -21,6 +21,11 @@ nav {
   background-color: #f1faee;
 }
 
+.navbar-nav {
+    gap: 20px;
+    font-size: 20px;
+}
+
 h1 {
   text-transform: uppercase;
 }
@@ -28,31 +33,38 @@ h1 {
 .rule {
   display: flex;
   justify-content: space-between;
-  margin:1rem;
+  margin: 1rem;
 }
 
 .bi{
 font-size: 3rem;
 }
 
-
 .checkbox-container {
-  background-color: #a8dadc;
   display: flex;
   justify-content: space-around;
   font-size: x-large;
 }
 
+.search-container{
+  display: flex;
+  justify-content: right;
+}
+ main{
+    background-color: #a8dadc;
+    padding: 2rem;
+ }
 .card-container {
   display: flex;
   justify-content: space-around;
   margin: 2rem 0rem;
 }
 
-.navbar-nav {
-    gap: 20px;
-    font-size: 20px;
+.card img{
+  height: 11rem;
+ 
 }
+
 
 /* e63946
 f1faee
