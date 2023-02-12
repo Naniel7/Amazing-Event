@@ -8,8 +8,8 @@
 }
 
 .logo {
-   height: 3rem;
-   margin-left: 1rem;
+  height: 3rem;
+  margin-left: 1rem;
 
 }
 
@@ -21,7 +21,7 @@
 
 nav {
   background-color: #f1faee;
-  }
+}
 
 
 h1 {
@@ -34,7 +34,7 @@ h1 {
   margin: 1rem;
 }
 
-.bi{
+.bi {
   font-size: 3rem;
 }
 
@@ -44,93 +44,100 @@ h1 {
   font-size: x-large;
 }
 
-.categories{
+.categories {
   display: flex;
   justify-content: left;
   gap: 1rem;
 }
+
 .navbar-nav {
-    gap: 20px;
-    font-size: 20px;
+  gap: 20px;
+  font-size: 20px;
 }
-.search-container{
+
+.search-container {
   display: flex;
   justify-content: right;
 }
- main{
-    background-color: #a8dadc;
-    padding: 2rem;
- }
 
-.categories input{
-    width: 1.2rem;
-    margin-right: 1.5rem;
- }
+main {
+  background-color: #a8dadc;
+  padding: 2rem;
+  height: 72vh;
+}
+
+.categories input {
+  width: 1.2rem;
+  margin-right: 1.5rem;
+}
+
 .card-container {
   display: flex;
   justify-content: space-around;
   margin: 2rem 0rem;
 }
 
-.card img{
+.card img {
   height: 11rem;
   padding: 1rem 1rem 0rem 1rem;
- }
+}
 
- .title{
+.title {
   display: flex;
   justify-content: space-around;
- }
+}
 
- h6{
+h6 {
   display: flex;
   align-items: center;
- }
+}
 
-.price-container{
+.price-container {
   display: flex;
   justify-content: space-between;
   align-items: baseline;
-  }
+}
 
-footer{
+footer {
   display: flex;
+  align-items: flex-end;
   justify-content: space-between;
   background-color: #1d3557;
-  
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+
 }
-.social-media{
+
+.social-media {
   display: flex;
   height: 5.1rem
 }
 
-footer i{
+footer i {
   color: #fff;
   margin: 1rem;
 }
 
-footer p{
-  font-size: xx-large ;
+footer p {
+  font-size: xx-large;
   color: #fff;
   margin-right: 1rem;
 }
 
-form{
+form {
   margin: auto;
-  width: 30rem;
+  width: 30vw;
 }
 
-.submit{
+.submit {
   display: flex;
   justify-content: flex-end;
 }
 
-.submit input{
-padding: 0.8rem;
+.submit input {
+  padding: 0.8rem;
 }
-
-
-
 
 
 
