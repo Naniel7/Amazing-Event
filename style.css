@@ -74,7 +74,7 @@ h1 {
 
 .card img{
   height: 11rem;
-  padding: 1rem;
+  padding: 1rem 1rem 0rem 1rem;
  }
 
  .title{
@@ -114,6 +114,33 @@ footer p{
   color: #fff;
   margin-right: 1rem;
 }
+
+form{
+  margin: auto;
+  width: 30rem;
+}
+
+.submit{
+  display: flex;
+  justify-content: flex-end;
+}
+
+.submit input{
+padding: 0.8rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* e63946
