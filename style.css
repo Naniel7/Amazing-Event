@@ -77,8 +77,7 @@ main {
 }
 
 .card img {
-  height: 11rem;
-  padding: 1rem 1rem 0rem 1rem;
+  padding: 1rem;
 }
 
 .title {
@@ -147,19 +146,12 @@ body {
   justify-content: center;
   align-content: center;
   align-items: center;
-  height: 30vh;
-  width: 60vw;
-}
+   }
 
 .col-md-6 img {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  align-items: center;
-  padding: 1rem;
   width: -webkit-fill-available;
   object-fit: cover;
-  height: auto;
+  border-radius: 2rem !important;
 }
 
 .main-details {
@@ -167,12 +159,6 @@ body {
   justify-content: center;
   align-items: center;
 }
-
-.card-text {
-  width: 100%;
-  padding: 1rem;
-}
-
 
 th{
   background-color: rgb(201, 201, 201);
@@ -185,7 +171,6 @@ th{
   padding: 1rem;
 }
 
-
 .table-down{
   background-color: #fff;
 }
@@ -193,7 +178,7 @@ th{
 .main-stats{
   display: flex;
   justify-content: center;
-  
+
 }
 
 
