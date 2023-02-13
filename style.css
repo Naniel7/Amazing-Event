@@ -173,6 +173,30 @@ body {
   padding: 1rem;
 }
 
+
+th{
+  background-color: rgb(201, 201, 201);
+  height: 3rem;
+  padding: 1rem;
+}
+
+.table-up{
+  background-color: rgb(223, 223, 223);
+  padding: 1rem;
+}
+
+
+.table-down{
+  background-color: #fff;
+}
+
+.main-stats{
+  display: flex;
+  justify-content: center;
+  
+}
+
+
 /* e63946
 f1faee
 a8dadc
