@@ -31,7 +31,8 @@ h1 {
 .rule {
   display: flex;
   justify-content: space-between;
-  margin: 1rem;
+  background-color: #fff;
+  padding: 1rem;
 }
 
 .bi {
@@ -106,11 +107,11 @@ footer {
   width: 100%;
   position: absolute;
   bottom: 0;
-
 }
 
 .social-media {
   display: flex;
+  align-items: center;
   height: 5.1rem
 }
 
@@ -139,7 +140,9 @@ form {
   padding: 0.8rem;
 }
 
-
+body{
+  background-color: #a8dadc !important;
+}
 
 
 
