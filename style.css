@@ -89,7 +89,6 @@ main{
   height: 13rem;
 }
 
-
 .title {
   display: flex;
   justify-content: space-around;
@@ -133,11 +132,6 @@ footer p {
   margin-right: 1rem;
 }
 
-.footer-bottom{
-  position: absolute;
-  bottom: 0%;
-}
-
 form {
   margin: auto;
   width: 50vw;
@@ -157,7 +151,8 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
+  padding-bottom: 3.5rem;
 }
 
 .pop-up {
