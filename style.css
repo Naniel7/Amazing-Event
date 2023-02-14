@@ -40,13 +40,16 @@ h1 {
 .checkbox-container {
   display: flex;
   justify-content: space-around;
-  font-size: x-large;
+  font-size: 23px;
+  gap: 1rem;
+
 }
 
 .categories {
   display: flex;
   justify-content: left;
-  gap: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
 .navbar-nav {
@@ -57,12 +60,12 @@ h1 {
 .search-container {
   display: flex;
   justify-content: right;
+  height: fit-content;
 }
 
 main {
   background-color: #a8dadc;
   padding: 2rem;
-  height: 72vh;
 }
 
 .categories input {
@@ -73,7 +76,9 @@ main {
 .card-container {
   display: flex;
   justify-content: space-around;
-  margin: 2rem 0rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  gap: 1rem;
 }
 
 .card img {
@@ -102,9 +107,8 @@ footer {
   justify-content: space-between;
   background-color: #1d3557;
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
+
 
 .social-media {
   display: flex;
@@ -125,7 +129,7 @@ footer p {
 
 form {
   margin: auto;
-  width: 30vw;
+  width: 50vw;
 }
 
 .submit {
@@ -139,6 +143,8 @@ form {
 
 body {
   background-color: #a8dadc !important;
+  display: flex;
+  flex-direction: column;
 }
 
 .pop-up {
@@ -173,6 +179,11 @@ th{
 
 .table-down{
   background-color: #fff;
+}
+
+table{
+  margin: 3px;
+
 }
 
 .main-stats{
