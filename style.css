@@ -176,31 +176,36 @@ body {
 }
 
 th{
-  background-color: rgb(201, 201, 201);
   height: 3rem;
-  padding: 1rem;
+  padding: 1rem !important;
+
+  
 }
 
 .table-up{
-background-color: #fff;
+background-color: #c9abc9;
 
 }
 
 .table-down{
-  background-color: #fff;
+  background-color: #a183a5;
 
 }
 
-td{
-  padding: 0.3rem;
-}
 
-table{
+.table-container{
   color: #000;
+  background-color: #efe9f0;
 
 
 }
 
+.th{
+  background-color: #939c6b !important;
+  display: flex;
+align-items: center;
+width: 100%;
+}
 
 .main-stats{
   display: flex;
