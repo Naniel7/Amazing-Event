@@ -1,8 +1,13 @@
 import data from './data.json' assert {type: 'json'};
 
 let cards = document.getElementById("cards");
+let today = new Date(data.currentDate);
 
-for (let card of data.events) {
+
+for (let card of data.events.filter(event => {
+    let eventDate = new Date(event.date)
+    return eventDate < today
+})) {
   cards.innerHTML += `
   <div class="card" style="width: 20rem">
   <img
