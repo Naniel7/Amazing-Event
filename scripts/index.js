@@ -27,8 +27,9 @@ for (let card of data.events) {
     <li class="list-group-item">
       <div class="price-container">
         <p>Price: $${card.price}</p>
-        <button type="button" class="btn btn-success">See More</button>
-      </div>
+        <a href="../details.html"> <button type="button" class="btn btn-success">See More</button> </a>
+        
+        </div>
     </li>
   </ul>
 </div>
