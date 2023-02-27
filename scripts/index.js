@@ -1,10 +1,14 @@
-import data from './data.json' assert {type: 'json'};
+import data from './data.json' assert { type: 'json' };
 
-let cards = document.getElementById("cards");
+let searcher = document.getElementById("searcher");
+
+
+
+let cards = document.getElementById('cards');
 
 for (let card of data.events) {
   cards.innerHTML += `
-  <div class="card" style="width: 20rem">
+  <div class="card" style="width: 20rem; margin-top: 1rem">
   <img
     src="${card.image}"
     class="card-img-top"
@@ -23,7 +27,9 @@ for (let card of data.events) {
     <li class="list-group-item">Category: ${card.category}</li>
     <li class="list-group-item">Place: ${card.place}</li>
     <li class="list-group-item">Capacity: ${card.capacity}</li>
-    <li class="list-group-item">${card.assistance ? "Assistance" : "Estimate"}: ${card.assistance ? card.assistance : card.estimate} </li>
+    <li class="list-group-item">${
+      card.assistance ? 'Assistance' : 'Estimate'
+    }: ${card.assistance ? card.assistance : card.estimate} </li>
     <li class="list-group-item">
       <div class="price-container">
         <p>Price: $${card.price}</p>
