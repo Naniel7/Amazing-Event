@@ -4,13 +4,9 @@ let cards = document.getElementById('cards');
 
 function cardCreator() {
   for (let card of data.events) {
-  cards.innerHTML += `
+    cards.innerHTML += `
   <div class="card" style="width: 20rem; margin-top: 1rem">
-  <img
-    src="${card.image}"
-    class="card-img-top"
-    alt="${card.name}"
-  />
+   <img src="${card.image}"class="card-img-top" alt="${card.name}"/>
   <div class="card-body">
     <div class="title">
       <h5 class="card-title">${card.name}</h5>
@@ -37,32 +33,31 @@ function cardCreator() {
   </ul>
 </div>
   `;
+  }
 }
-  
-}
-cardCreator()
+cardCreator();
 
+let searcherInput = document.getElementById('searcher');
+let cardTitle = document.getElementsByClassName('card-title');
+let cardDescription = document.getElementsByClassName('card-text');
+let buttonSearch = document.getElementById('button-search');
 
-function search_animal() {
-  let input = document.getElementById('searcher').value;
-  input=input.toLowerCase();
-
-  let x = document.getElementsByClassName('card');
-  console.log(x);
-  for (i = 0; i < x.length; i++) { 
-      
-    if (!x[i].innerHTML.toLowerCase().includes(input)) {
-          x[i].style.display="none";
-      }
-      else {
-          x[i].style.display="list-item";                 
-      }
+function searchEvent(input) {
+  for (let i = 0; i < cardTitle.length; i++) {
+    if (
+      cardTitle[i].innerHTML.includes(input.toLowerCase()) ||
+      cardDescription[i].innerHTML.toLowerCase().includes(input.toLowerCase())
+    ) {
+      cardTitle[i].parentNode.parentNode.parentNode.style.display = 'flex';
+    } else {
+      cardTitle[i].parentNode.parentNode.parentNode.style.display = 'none';
+    }
   }
 }
 
-search_animal()
-
-
+buttonSearch.addEventListener('click', () => {
+  searchEvent(searcherInput.value);
+});
 
 /* searcher.addEventListener("keyup", ()=>{
 
@@ -72,7 +67,6 @@ search_animal()
   
   ) 
   createCards(); */
-
 
 /* for (let card of data.events) {
   cards.innerHTML += `
@@ -110,7 +104,6 @@ search_animal()
   `;
 } */
 
-
 /* searcher.addEventListener("keyup", e=>{
   
   if (e.target.matches("#searcher")) {
@@ -126,8 +119,6 @@ search_animal()
 searcher();
  */
 
-
-
 /* function myFunction() {
   let popup = document.getElementById("myPopup");
   popup.classList.toggle("show");
@@ -135,4 +126,3 @@ searcher();
 
 
  */
-
