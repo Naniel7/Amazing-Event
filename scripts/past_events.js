@@ -39,3 +39,28 @@ for (let card of data.events.filter(event => {
 </div>
   `;
 }
+
+
+let searcherInput = document.getElementById('searcher');
+let cardTitle = document.getElementsByClassName('card-title');
+let cardDescription = document.getElementsByClassName('card-text');
+let buttonSearch = document.getElementById('button-search');
+
+console.log(searcherInput);
+function searchEvent(input) {
+  for (let i = 0; i < cardTitle.length; i++) {
+    if (
+      cardTitle[i].innerHTML.toLowerCase().includes(input.toLowerCase()) ||
+      cardDescription[i].innerHTML.toLowerCase().includes(input.toLowerCase())
+    ) {
+      cardTitle[i].parentNode.parentNode.parentNode.style.display = 'flex';
+    } else {
+      cardTitle[i].parentNode.parentNode.parentNode.style.display = 'none';
+    }
+  }
+}
+
+buttonSearch.addEventListener('click', () => {
+  searchEvent(searcherInput.value);
+  console.log(searcherInput.value);
+});
