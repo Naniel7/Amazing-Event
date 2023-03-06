@@ -2,12 +2,11 @@ import data from './data.json' assert { type: 'json' };
 let statsTable = document.getElementById("main-stats")
 
 
+
+
 function tableCreator() {
   for (let table of data.events) {
- if (Math.max(table.capacity)) {
-    statsTable.innerHTML=table.name
-    
- }
+ 
     statsTable.innerHTML += `    
     <div class="table-responsive">
     <table class="table table-container">
@@ -22,7 +21,7 @@ function tableCreator() {
       <tr class="table-down">
         <td>Event1</td>
         <td>Event2</td>
-        <td>${table.name} </td>
+        <td>   </td>
         </tr>
       <tr>
         <th colspan="3">Upcoming events statistics by category</th>
@@ -91,6 +90,19 @@ function tableCreator() {
 }
 
 tableCreator();
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 {
   /* <div class="table-responsive">
