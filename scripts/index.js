@@ -37,16 +37,11 @@ function cardCreator() {
 }
 cardCreator();
 
-
-
-
-
 let searcherInput = document.getElementById('searcher');
 let cardTitle = document.getElementsByClassName('card-title');
 let cardDescription = document.getElementsByClassName('card-text');
 let buttonSearch = document.getElementById('button-search');
 
-console.log(searcherInput);
 function searchEvent(input) {
   for (let i = 0; i < cardTitle.length; i++) {
     if (
@@ -62,6 +57,30 @@ function searchEvent(input) {
 
 buttonSearch.addEventListener('click', () => {
   searchEvent(searcherInput.value);
-  console.log(searcherInput.value);
 });
+
+let checked = document.querySelector("checkbox");
+
+function checkInput(input) {
+  for (let i = 0; i < checked.length; i++) {
+    if (
+      checked[i].checked(input))  {
+      cardTitle[i].parentNode.parentNode.parentNode.style.display = 'flex';
+    } else {
+      cardTitle[i].parentNode.parentNode.parentNode.style.display = 'none';
+    }
+  }
+}
+
+/* function chekboxCheck() {
+  if (document.getElementById('category1').checked) {
+console.log("category1");
+  } else if (document.getElementById('category2').checked) {
+  } else if (document.getElementById('category3').checked) {
+  } else if (document.getElementById('category4').checked) {
+  } else if (document.getElementById('category5').checked) {
+  } else if (document.getElementById('category6').checked) {
+  } else if (document.getElementById('category7').checked) {
+  }
+} */
 
