@@ -155,10 +155,10 @@ body {
 }
 
 .pop-up {
-  display: flex;
   justify-content: center;
   align-content: center;
   align-items: center;
+  height: fit-conte;
 }
 
 .col-md-6 img {

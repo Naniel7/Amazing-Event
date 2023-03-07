@@ -26,7 +26,7 @@ function cardCreator() {
     <li class="list-group-item">
       <div class="price-container">
         <p>Price: ${card.price}</p>
-        <a href="../details.html?id=${card.id}"> <button type="button" class="btn btn-success">See More</button> </a>
+        <a href="../details.html?id=${card._id}"> <button type="button" class="btn btn-success">See More</button> </a>
         
         </div>
     </li>
