@@ -25,7 +25,7 @@ for (let card of data.events.filter(event => {
     </p>
   </div>
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">Category: ${card.category}</li>
+  <li class="list-group-item category" value="${card.category}">Category: ${card.category}</li>
     <li class="list-group-item">Place: ${card.place}</li>
     <li class="list-group-item">Capacity: ${card.capacity}</li>
     <li class="list-group-item">${card.assistance ? "Assistance" : "Estimate"}: ${card.assistance ? card.assistance : card.estimate} </li>
@@ -41,12 +41,12 @@ for (let card of data.events.filter(event => {
 }
 
 
+//Searcher
 let searcherInput = document.getElementById('searcher');
 let cardTitle = document.getElementsByClassName('card-title');
 let cardDescription = document.getElementsByClassName('card-text');
 let buttonSearch = document.getElementById('button-search');
 
-console.log(searcherInput);
 function searchEvent(input) {
   for (let i = 0; i < cardTitle.length; i++) {
     if (
@@ -62,5 +62,38 @@ function searchEvent(input) {
 
 buttonSearch.addEventListener('click', () => {
   searchEvent(searcherInput.value);
-  console.log(searcherInput.value);
 });
+
+//checkboxes
+let checkboxes = document.querySelectorAll(".checkbox-values")
+let categories = document.querySelectorAll(".category")
+let array = []
+
+checkboxes.forEach(e=>{
+  e.addEventListener("click", ()=> {
+    if(e.checked){
+      array.push(e.value)
+    } 
+    if(e.checked === false) {
+      let newarray = array.filter(el => el !== e.value)
+      array = newarray
+    }
+    categoryFilter(array)
+  })
+})
+
+function categoryFilter(array) {
+  if(array.length){
+    for (let i = 0; i < categories.length; i++) {  
+      if (array.includes(categories[i].getAttribute("value"))) {
+        categories[i].parentNode.parentNode.style.display = 'flex';
+      } else {
+        categories[i].parentNode.parentNode.style.display = 'none';
+      }
+    }
+  }else {
+    for (let i = 0; i < categories.length; i++) {
+      categories[i].parentNode.parentNode.style.display = 'flex';
+    }
+  }
+}
