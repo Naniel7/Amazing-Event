@@ -2,8 +2,8 @@ import data from './data.json' assert { type: 'json' };
 let statsTable = document.getElementById("main-stats")
 
 
-
-
+//Tabla Dinámica
+/* 
 function tableCreator() {
   for (let table of data.events) {
  
@@ -94,7 +94,7 @@ tableCreator();
 
 
 
-
+ */
 
 
 
