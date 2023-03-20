@@ -1,21 +1,23 @@
 let cards = document.getElementById('cards');
 let cardEvents = [];
-
+//fetch("./endpoint.json")
 function dataBase() {
   fetch('https://mindhub-xj03.onrender.com/api/amazing')
     .then((response) => response.json())
     .then((apiData) => {
-      cardCreator(apiData.events, cards);
+      cardCreator(apiData.events, cards, apiData.currentDate);
     })
     .catch((error) => console.log(error.message));
 }
-
 dataBase();
 
-function cardCreator(cardData, place) {
+function cardCreator(cardData, cardPlace, today) {
   let cardCreated = '';
-
-  cardData.forEach((card) => {
+  cardData.filter(event => {
+    let eventDate = new Date(event.date + "T00:00:00")
+    let currentDate = new Date(today + "T00:00:00")
+    return eventDate < currentDate
+}).forEach((card) => {
     cardCreated += `
     <div class="card" style="width: 20rem; margin-top: 1rem">
      <img src="${card.image}" class="card-img-top" alt="${card.name}"/>
@@ -30,8 +32,7 @@ function cardCreator(cardData, place) {
     </div>
     <ul class="list-group list-group-flush">
       <li class="list-group-item category" value="${card.category}">Category: ${
-      card.category
-    }</li>
+      card.category}</li>
       <li class="list-group-item">Place: ${card.place}</li>
       <li class="list-group-item">Capacity: ${card.capacity}</li>
       <li class="list-group-item">${
@@ -50,10 +51,9 @@ function cardCreator(cardData, place) {
   </div>
     `;
   });
-  place.innerHTML = cardCreated;
+  cardPlace.innerHTML = cardCreated;
 }
 
-dataBase();
 
 //Searcher
 let searcherInput = document.getElementById('searcher');

@@ -12,9 +12,8 @@ function dataBase() {
 
 dataBase();
 
-function cardCreator(cardData, place) {
+function cardCreator(cardData, cardPlace) {
   let cardCreated = '';
-
   cardData.forEach((card) => {
     cardCreated += `
     <div class="card" style="width: 20rem; margin-top: 1rem">
@@ -50,7 +49,7 @@ function cardCreator(cardData, place) {
   </div>
     `;
   });
-  place.innerHTML = cardCreated;
+  cardPlace.innerHTML = cardCreated;
 }
 
 dataBase();
