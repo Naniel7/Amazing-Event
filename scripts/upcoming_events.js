@@ -1,6 +1,5 @@
 let cards = document.getElementById('cards');
 let cardEvents = [];
-//fetch("./endpoint.json")
 function dataBase() {
   fetch('https://mindhub-xj03.onrender.com/api/amazing')
     .then((response) => response.json())
