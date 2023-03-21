@@ -5,36 +5,60 @@ fetch('https://mindhub-xj03.onrender.com/api/amazing')
       results(assistance(data), assistance(data).reverse(), capacity(data)),
       'table1'
     );
-    printTable2(getCategory(upcoming(data)), 'table2');
+    printTable2(getCategory(upcoming(data,'upcoming'), "estimate"), 'table2');
+    printTable2(getCategory(upcoming(data, "pass"), "assis"), 'table3');
   });
 
-function upcoming(data) {
+function upcoming(data, type) {
   let event = data.events;
   let currentDate = data.currentDate;
-  return event.filter((event) => event.date > currentDate);
+  return type === 'upcoming' ? event.filter((event) => event.date > currentDate) : event.filter((event) => event.date < currentDate);
 }
 
-function getCategory(array) {
+function getCategory(array, label) {
   let categories = {};
-  for (let i = 0; i < array.length; i++) {
-    if (!categories.hasOwnProperty(array[i].category)) {
-      categories = {
-        ...categories,
-        [array[i].category]: {
-          ['revenues']: array[i].price * array[i].estimate,
-        },
-      };
-    } else {
-      let label = array[i].category;
-      console.log(categories.label);
-      //categories[array[i].category] = categories[array[i].category].revenues + (array[i].price * array[i].estimate)
+  if(label === "estimate"){
+    for (let i = 0; i < array.length; i++) {
+      if (!categories.hasOwnProperty(array[i].category)) {
+        categories = {
+          ...categories,
+          [array[i].category]: {
+            ['revenues']: array[i].price * array[i].estimate,
+            ['capacity']: array[i].capacity,
+            ['estimate']: array[i].estimate,
+          },
+        };
+      } else {
+        categories[array[i].category] = {
+          ...categories[array[i].category], 
+          revenues: categories[array[i].category].revenues + (array[i].price * array[i].estimate),
+          capacity: categories[array[i].category].capacity + array[i].capacity,
+          estimate: categories[array[i].category].estimate + array[i].estimate,
+        }
+      }
+    }
+  }else {
+    for (let i = 0; i < array.length; i++) {
+      if (!categories.hasOwnProperty(array[i].category)) {
+        categories = {
+          ...categories,
+          [array[i].category]: {
+            ['revenues']: array[i].price * array[i].assistance,
+            ['capacity']: array[i].capacity,
+            ['assistance']: array[i].assistance,
+          },
+        };
+      } else {
+        categories[array[i].category] = {
+          ...categories[array[i].category], 
+          revenues: categories[array[i].category].revenues + (array[i].price * array[i].assistance),
+          capacity: categories[array[i].category].capacity + array[i].capacity,
+          assistance: categories[array[i].category].assistance + array[i].assistance,
+        }
+      }
     }
   }
   return categories;
-}
-
-function past(data) {
-  return data.filter((event) => event.date < data.currentDate);
 }
 
 function assistance(arrayToRead) {
@@ -86,8 +110,8 @@ function printTable2(object, element) {
   for (let i = 0; i < array.length; i++) {
     table1.innerHTML += `
         <td>${array[i][0]}</td>
-        <td>${array[i][1]}</td>
-        <td></td>
+        <td>$ ${array[i][1].revenues}</td>
+        <td>${(((element === "table2" ? array[i][1].estimate : array[i][1].assistance) / array[i][1].capacity)*100).toFixed(2)}%</td>
     `;
   }
 }

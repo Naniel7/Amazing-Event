@@ -1,11 +1,12 @@
-import data from './data.json' assert { type: 'json' };
+fetch('https://mindhub-xj03.onrender.com/api/amazing')
+  .then((response) => response.json())
+  .then(data => {
+const queryString = location.search;
 
-const queryString =location.search;
 const params =  new URLSearchParams(queryString);
+console.log(params);
 const id=params.get("id");
-
-const cardPushed = data.events.find(card=>card._id==id);
-console.log(cardPushed);
+let cardPushed = data.events.find(card=>card._id==id);
 let mainDetails = document.getElementById("main-details")
 mainDetails.innerHTML=`<div class="card mb-3">
 <div class="row g-0 pop-up">
@@ -22,3 +23,6 @@ mainDetails.innerHTML=`<div class="card mb-3">
   </div>
 </div>
 </div>`
+  })
+    
+
