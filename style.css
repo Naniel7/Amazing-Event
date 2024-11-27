@@ -29,7 +29,6 @@ h1 {
   display: flex;
   justify-content: space-around;
   align-content: center;
-  background: linear-gradient(180deg, rgb(0, 0, 0), #580b77);
   padding: 1rem;
   color: #ffffffce;
 }
@@ -72,12 +71,6 @@ h1 {
   height: fit-content;
 }
 
-main {
-  background: linear-gradient(0deg, rgb(0, 0, 0), #580b77);
-  color: #ffffffce;
-  padding: 2rem;
-  padding: 0 10rem;
-}
 
 .categories input {
   width: 1.2rem;
@@ -166,6 +159,11 @@ body {
   position: relative;
   min-height: 100vh;
   padding-bottom: 3.5rem;
+  background-image: url(./images/bg.png);
+  background-repeat: no-repeat;        
+  background-position: center;        
+  background-size: cover;             
+  background-attachment: fixed;  
 }
 
 .pop-up {

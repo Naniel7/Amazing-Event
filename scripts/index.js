@@ -2,7 +2,7 @@ let cards = document.getElementById('cards');
 let cardEvents = [];
 
 function dataBase() {
-  fetch('https://mindhub-xj03.onrender.com/api/amazing')
+  fetch('./scripts/endpoint.json')
     .then((response) => response.json())
     .then((apiData) => {
       cardCreator(apiData.events, cards);

@@ -1,4 +1,4 @@
-fetch('https://mindhub-xj03.onrender.com/api/amazing')
+fetch('./scripts/endpoint.json')
   .then((response) => response.json())
   .then(data => {
 const queryString = location.search;
