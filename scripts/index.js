@@ -16,7 +16,7 @@ function cardCreator(cardData, cardPlace) {
   let cardCreated = '';
   cardData.forEach((card) => {
     cardCreated += `
-    <div class="card" style="width: 20rem; margin-top: 1rem">
+    <div class="card">
      <img src="${card.image}" class="card-img-top" alt="${card.name}"/>
     <div class="card-body">
       <div class="title">
@@ -93,7 +93,7 @@ function categoryFilter(array, categories) {
     }
   } else {
     for (let i = 0; i < categories.length; i++) {
-      categories[i].parentNode.parentNode.style.display = 'flex';
+      categories[i].parentNode.parentNode.style.display = 'flex';z
     }
   }
 }
