@@ -63,9 +63,18 @@ function searchEvent(input) {
   }
 }
 
+
 buttonSearch.addEventListener("click", () => {
   searchEvent(searcherInput.value);
 });
+
+searcherInput.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    event.preventDefault(); 
+    searchEvent(searcherInput.value);
+  }
+});
+
 
 //checkboxes
 let checkboxes = document.querySelectorAll(".checkbox-values");
@@ -99,4 +108,21 @@ checkboxes.forEach((e) => {
     }
     categoryFilter(array, categories);
   });
+});
+
+
+const linkedinUrl = "https://www.linkedin.com/in/natalia-g%C3%BCemes-duarte-2b1783184/";
+const githubUrl = "https://github.com/Naniel7";
+
+const linkedinIcon = document.querySelector(".linkedin a");
+const githubIcon = document.querySelector(".github a");
+
+linkedinIcon.addEventListener("click", (event) => {
+  event.preventDefault(); 
+  window.open(linkedinUrl, "_blank"); 
+});
+
+githubIcon.addEventListener("click", (event) => {
+  event.preventDefault(); 
+  window.open(githubUrl, "_blank"); 
 });
