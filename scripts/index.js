@@ -1,8 +1,8 @@
-let cards = document.getElementById('cards');
+let cards = document.getElementById("cards");
 let cardEvents = [];
 
 function dataBase() {
-  fetch('./scripts/endpoint.json')
+  fetch("./scripts/endpoint.json")
     .then((response) => response.json())
     .then((apiData) => {
       cardCreator(apiData.events, cards);
@@ -13,7 +13,7 @@ function dataBase() {
 dataBase();
 
 function cardCreator(cardData, cardPlace) {
-  let cardCreated = '';
+  let cardCreated = "";
   cardData.forEach((card) => {
     cardCreated += `
     <div class="card">
@@ -34,7 +34,7 @@ function cardCreator(cardData, cardPlace) {
       <li class="list-group-item">Place: ${card.place}</li>
       <li class="list-group-item">Capacity: ${card.capacity}</li>
       <li class="list-group-item">${
-        card.assistance ? 'Assistance' : 'Estimate'
+        card.assistance ? "Assistance" : "Estimate"
       }: ${card.assistance ? card.assistance : card.estimate} </li>
       <li class="list-group-item">
         <div class="price-container">
@@ -55,10 +55,10 @@ function cardCreator(cardData, cardPlace) {
 dataBase();
 
 //Searcher
-let searcherInput = document.getElementById('searcher');
-let cardTitle = document.getElementsByClassName('card-title');
-let cardDescription = document.getElementsByClassName('card-text');
-let buttonSearch = document.getElementById('button-search');
+let searcherInput = document.getElementById("searcher");
+let cardTitle = document.getElementsByClassName("card-title");
+let cardDescription = document.getElementsByClassName("card-text");
+let buttonSearch = document.getElementById("button-search");
 
 function searchEvent(input) {
   for (let i = 0; i < cardTitle.length; i++) {
@@ -66,40 +66,40 @@ function searchEvent(input) {
       cardTitle[i].innerHTML.toLowerCase().includes(input.toLowerCase()) ||
       cardDescription[i].innerHTML.toLowerCase().includes(input.toLowerCase())
     ) {
-      cardTitle[i].parentNode.parentNode.parentNode.style.display = 'flex';
+      cardTitle[i].parentNode.parentNode.parentNode.style.display = "flex";
     } else {
-      cardTitle[i].parentNode.parentNode.parentNode.style.display = 'none';
+      cardTitle[i].parentNode.parentNode.parentNode.style.display = "none";
     }
   }
 }
 
-buttonSearch.addEventListener('click', () => {
+buttonSearch.addEventListener("click", () => {
   searchEvent(searcherInput.value);
 });
 
-
 //checkboxes
-let checkboxes = document.querySelectorAll('.checkbox-values');
+let checkboxes = document.querySelectorAll(".checkbox-values");
 let array = [];
 
 function categoryFilter(array, categories) {
   if (array.length) {
     for (let i = 0; i < categories.length; i++) {
-      if (array.includes(categories[i].getAttribute('value'))) {
-        categories[i].parentNode.parentNode.style.display = 'flex';
+      if (array.includes(categories[i].getAttribute("value"))) {
+        categories[i].parentNode.parentNode.style.display = "flex";
       } else {
-        categories[i].parentNode.parentNode.style.display = 'none';
+        categories[i].parentNode.parentNode.style.display = "none";
       }
     }
   } else {
     for (let i = 0; i < categories.length; i++) {
-      categories[i].parentNode.parentNode.style.display = 'flex';z
+      categories[i].parentNode.parentNode.style.display = "flex";
+      z;
     }
   }
 }
 checkboxes.forEach((e) => {
-  e.addEventListener('click', () => {
-    let categories = document.querySelectorAll('.category');
+  e.addEventListener("click", () => {
+    let categories = document.querySelectorAll(".category");
     if (e.checked) {
       array.push(e.value);
     }
