@@ -11,46 +11,36 @@ function dataBase() {
 }
 
 dataBase();
-
 function cardCreator(cardData, cardPlace) {
   let cardCreated = "";
   cardData.forEach((card) => {
     cardCreated += `
-    <div class="card">
-     <img src="${card.image}" class="card-img-top" alt="${card.name}"/>
-    <div class="card-body">
-      <div class="title">
-        <h5 class="card-title">${card.name}</h5>
-        <h6>${card.date}</h6>
+    <div class="card" onclick="window.location.href='../details.html?id=${card._id}'">
+      <img src="${card.image}" class="card-img-top" alt="${card.name}"/>
+      <div class="card-body">
+        <div class="title">
+          <h5 class="card-title">${card.name}</h5>
+          <h6>${card.date}</h6>
+        </div>
+        <p class="card-text">${card.description}</p>
       </div>
-      <p class="card-text">
-      ${card.description}
-      </p>
-    </div>
-    <ul class="list-group list-group-flush">
-      <li class="list-group-item category" value="${card.category}">Category: ${
-      card.category
-    }</li>
-      <li class="list-group-item">Place: ${card.place}</li>
-      <li class="list-group-item">Capacity: ${card.capacity}</li>
-      <li class="list-group-item">${
-        card.assistance ? "Assistance" : "Estimate"
-      }: ${card.assistance ? card.assistance : card.estimate} </li>
-      <li class="list-group-item">
-        <div class="price-container">
-          <p>Price: ${card.price}</p>
-          <a href="../details.html?id=${
-            card._id
-          }"> <button type="button" class="btn btn-success">See More</button> </a>
-          
+      <ul class="list-group list-group-flush">
+        <li class="list-group-item category" value="${card.category}">Category: ${card.category}</li>
+        <li class="list-group-item">Place: ${card.place}</li>
+        <li class="list-group-item">Capacity: ${card.capacity}</li>
+        <li class="list-group-item">${card.assistance ? "Assistance" : "Estimate"}: ${card.assistance ? card.assistance : card.estimate}</li>
+        <li class="list-group-item">
+          <div class="price-container">
+            <p>Price: ${card.price}</p>
+            <a href="../details.html?id=${card._id}"><button type="button" class="btn btn-success">See More</button></a>
           </div>
-      </li>
-    </ul>
-  </div>
-    `;
+        </li>
+      </ul>
+    </div>`;
   });
   cardPlace.innerHTML = cardCreated;
 }
+
 
 dataBase();
 
