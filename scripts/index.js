@@ -9,8 +9,8 @@ function dataBase() {
     })
     .catch((error) => console.log(error.message));
 }
-
 dataBase();
+
 function cardCreator(cardData, cardPlace) {
   let cardCreated = "";
   cardData.forEach((card) => {

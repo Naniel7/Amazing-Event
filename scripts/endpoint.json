@@ -9,7 +9,7 @@
       "description": "Enjoy your favourite dishes, from different countries, in a unique event for the whole family.",
       "image": "https://i.postimg.cc/kXWrBjXC/collectivities-party.jpg",
       "place": "Multi Space",
-      "price": 10,
+      "price": 50,
       "capacity": 50000,
       "assistance": 42756
     },
@@ -21,7 +21,7 @@
       "description": "Let's go meet the biggest dinosaurs in the paleontology museum.",
       "image": "https://i.postimg.cc/nrQkSwwh/jurassic-park.jpg",
       "place": "Field",
-      "price": 3,
+      "price": 150,
       "capacity": 10000,
       "assistance": 6589
     },
@@ -33,9 +33,9 @@
       "description": "The only concert of the most emblematic band in the world.",
       "image": "https://i.postimg.cc/XvQQr5C4/metallica-concert.jpg",
       "place": "Stadium",
-      "price": 20,
-      "capacity": 500000,
-      "assistance": 497981
+      "price": 200,
+      "capacity": 50000,
+      "assistance": 49798
     },
     {
       "_id": 4,
@@ -45,9 +45,9 @@
       "description": "Come and exercise, improve your health and lifestyle.",
       "image": "https://i.postimg.cc/2V3FvcvY/10k-4life.jpg",
       "place": "Football field",
-      "price": 2,
-      "capacity": 200000,
-      "assistance": 198900
+      "price": 10,
+      "capacity": 20000,
+      "assistance": 19890
     },
     {
       "_id": 5,
@@ -57,7 +57,7 @@
       "description": "Bring your unused school book and take the one you need.",
       "image": "https://i.postimg.cc/34BWbTsq/school-bookfair.jpg",
       "place": "Multi Space",
-      "price": 2,
+      "price": 5,
       "capacity": 50000,
       "assistance": 38429
     },
@@ -65,11 +65,11 @@
       "_id": 6,
       "name": "Aladdin",
       "category": "Cinema",
-      "date": "2019-05-24",
+      "date": "2022-05-24",
       "description": "We invite you watch Disney's classic character in new adventures.",
       "image": "https://i.postimg.cc/L4fQTJdB/aladdin.jpg",
       "place": "Showcase",
-      "price": 4,
+      "price": 5,
       "capacity": 2500,
       "assistance": 1875
     },
@@ -82,8 +82,8 @@
       "image": "https://i.postimg.cc/CxJQqX33/arabic.jpg",
       "place": "Multi Space",
       "price": 10,
-      "capacity": 50000,
-      "estimate": 50000
+      "capacity": 5000,
+      "estimate": 5000
     },
     {
       "_id": 8,
@@ -93,9 +93,9 @@
       "description": "Enjoy the best Korean dishes, with international chefs and awesome events.",
       "image": "https://i.postimg.cc/bvzmYgdm/korean.jpg",
       "place": "Multi Space",
-      "price": 10,
-      "capacity": 50000,
-      "assistance": 48516
+      "price": 70,
+      "capacity": 5000,
+      "assistance": 4856
     },
     {
       "_id": 9,
@@ -105,9 +105,9 @@
       "description": "Enjoy the best Japanese dishes, with international chefs and awesome events.",
       "image": "https://i.postimg.cc/50rg3Mgr/japanese.jpg",
       "place": "Multi Space",
-      "price": 10,
-      "capacity": 50000,
-      "assistance": 49618
+      "price": 60,
+      "capacity": 5000,
+      "assistance": 4968
     },
     {
       "_id": 10,
@@ -117,9 +117,9 @@
       "description": "We gather Middle East's collectivities in a unique event to enjoy in family.",
       "image": "https://i.postimg.cc/sf8HP502/middle-east.jpg",
       "place": "Multi Space",
-      "price": 10,
-      "capacity": 50000,
-      "assistance": 42756
+      "price": 30,
+      "capacity": 5000,
+      "assistance": 4256
     },
     {
       "_id": 11,
@@ -130,8 +130,8 @@
       "image": "https://i.postimg.cc/yDMJDnhL/take-away.jpg",
       "place": "Multi Space",
       "price": 10,
-      "capacity": 50000,
-      "assistance": 42756
+      "capacity": 5000,
+      "assistance": 4276
     },
     {
       "_id": 12,
@@ -141,9 +141,9 @@
       "description": "Enjoy the best dishes in this awesome culinary event.",
       "image": "https://i.postimg.cc/DfJ3Kv98/italian.jpg",
       "place": "Multi Space",
-      "price": 10,
-      "capacity": 50000,
-      "assistance": 42756
+      "price": 40,
+      "capacity": 5000,
+      "assistance": 4276
     },
     {
       "_id": 13,
@@ -153,9 +153,9 @@
       "description": "The best literary works of a captivating genre full of mythical characters.",
       "image": "https://i.postimg.cc/mZvfZx4V/fantasy.jpg",
       "place": "Multi Space",
-      "price": 4,
-      "capacity": 50000,
-      "assistance": 44029
+      "price": 15,
+      "capacity": 5000,
+      "assistance": 4409
     },
     {
       "_id": 14,
@@ -165,8 +165,8 @@
       "description": "If you're a gastronomy lover come get the cookbook that best suits your taste and your family's.",
       "image": "https://i.postimg.cc/PxJKYqWZ/just4-kitchen.jpg",
       "place": "Multi Space",
-      "price": 2,
-      "capacity": 50000,
+      "price": 10,
+      "capacity": 5000,
       "estimate": 5000
     },
     {
@@ -177,9 +177,9 @@
       "description": "Get to know the best works of literature and take the one that catches you the most.",
       "image": "https://i.postimg.cc/Jh2YTJ4K/bestseller.jpg",
       "place": "Multi Space",
-      "price": 5,
-      "capacity": 50000,
-      "estimate": 48000
+      "price": 10,
+      "capacity": 5000,
+      "estimate": 4800
     },
     {
       "_id": 16,
@@ -190,8 +190,8 @@
       "image": "https://i.postimg.cc/52mZm6Ck/harry.jpg",
       "place": "Multi Space",
       "price": 5,
-      "capacity": 50000,
-      "estimate": 50000
+      "capacity": 5000,
+      "estimate": 5000
     },
     {
       "_id": 17,
@@ -201,9 +201,9 @@
       "description": "For comic lovers, all your favourite characters gathered in one place.",
       "image": "https://i.postimg.cc/Gph6gdP3/comicon.jpg",
       "place": "Monumental Theater",
-      "price": 10,
-      "capacity": 50000,
-      "assistance": 45781
+      "price": 60,
+      "capacity": 5000,
+      "assistance": 4781
     },
     {
       "_id": 18,
@@ -214,8 +214,8 @@
       "image": "https://i.postimg.cc/v154f93b/spring.jpg",
       "place": "Monumental Theater",
       "price": 10,
-      "capacity": 50000,
-      "estimate": 30000
+      "capacity": 5000,
+      "estimate": 3000
     },
     {
       "_id": 19,
@@ -225,9 +225,9 @@
       "description": "A unique cultural event awaits you.",
       "image": "https://i.postimg.cc/x8HZNCQ5/cultures.jpg",
       "place": "Monumental Theater",
-      "price": 2,
-      "capacity": 50000,
-      "estimate": 45000
+      "price": 15,
+      "capacity": 5000,
+      "estimate": 4500
     },
     {
       "_id": 20,
@@ -237,9 +237,9 @@
       "description": "Bring your kid with his favourite costume.",
       "image": "https://i.postimg.cc/Nj8NwSGy/little-ones.jpg",
       "place": "Monumental Theater",
-      "price": 1,
-      "capacity": 50000,
-      "estimate": 50000
+      "price": 40,
+      "capacity": 5000,
+      "estimate": 5000
     },
     {
       "_id": 21,
@@ -249,9 +249,9 @@
       "description": "Come dressed as a pirate, firefighter, or a nurse, and we'll see who wins the big prize.",
       "image": "https://i.postimg.cc/FHvMcj7L/epic.jpg",
       "place": "Monumental Theater",
-      "price": 2,
-      "capacity": 50000,
-      "estimate": 50000
+      "price": 60,
+      "capacity": 5000,
+      "estimate": 5000
     },
     {
       "_id": 22,
@@ -261,9 +261,9 @@
       "description": "We'll be raising funds for hospitals and medical care in this unique event held in The Big Apple.",
       "image": "https://i.postimg.cc/LYR31mkQ/15kny.jpg",
       "place": "New York",
-      "price": 5,
-      "capacity": 1000000,
-      "assistance": 926981
+      "price": 10,
+      "capacity": 10000,
+      "assistance": 9261
     },
     {
       "_id": 23,
@@ -273,9 +273,9 @@
       "description": "Join us for a healthier life and a cleaner city.",
       "image": "https://i.postimg.cc/hXdLZXp3/15kbsas.jpg",
       "place": "Buenos Aires",
-      "price": 3,
-      "capacity": 500000,
-      "estimate": 300000
+      "price": 5,
+      "capacity": 5000,
+      "estimate": 3000
     },
     {
       "_id": 24,
@@ -285,9 +285,9 @@
       "description": "Come join us in this marathon's 3ed edition.",
       "image": "https://i.postimg.cc/pVn460jj/bsas22.jpg",
       "place": "Buenos Aires",
-      "price": 3,
-      "capacity": 500000,
-      "estimate": 50000
+      "price": 5,
+      "capacity": 5000,
+      "estimate": 5000
     },
     {
       "_id": 25,
@@ -297,9 +297,9 @@
       "description": "We'll be expecting you in the 6th edition across the Big Apple.",
       "image": "https://i.postimg.cc/d1VN66Yh/ny22.webp",
       "place": "New York",
-      "price": 5,
-      "capacity": 1000000,
-      "estimate": 1000000
+      "price": 15,
+      "capacity": 10000,
+      "estimate": 10000
     },
     {
       "_id": 26,
@@ -309,9 +309,9 @@
       "description": "If you enjoyed las year's edition you'll love this one.",
       "image": "https://i.postimg.cc/fRWHD5VB/4life.jpg",
       "place": "Cordoba",
-      "price": 2,
-      "capacity": 300000,
-      "estimate": 270500
+      "price": 20,
+      "capacity": 30000,
+      "estimate": 27000
     },
     {
       "_id": 27,
@@ -321,9 +321,9 @@
       "description": "We'll be raising funds for the cancer patients.",
       "image": "https://i.postimg.cc/c4y2yQ7b/cancer.jpg",
       "place": "Rosario",
-      "price": 2,
-      "capacity": 300000,
-      "estimate": 300000
+      "price": 5,
+      "capacity": 30000,
+      "estimate": 30000
     },
     {
       "_id": 28,
@@ -333,9 +333,9 @@
       "description": "The best national and international DJs gathered in one place.",
       "image": "https://i.postimg.cc/FRY8mpn2/electronic.jpg",
       "place": "Stadium",
-      "price": 20,
-      "capacity": 500000,
-      "assistance": 488005
+      "price": 150,
+      "capacity": 5000,
+      "assistance": 4805
     },
     {
       "_id": 29,
@@ -345,9 +345,9 @@
       "description": "The best popular hits gathered in a unique event for the hole family to enjoy.",
       "image": "https://i.postimg.cc/jjXky9GV/popular.jpg",
       "place": "Stadium",
-      "price": 20,
-      "capacity": 500000,
-      "assistance": 464780
+      "price": 200,
+      "capacity": 50000,
+      "assistance": 46470
     },
     {
       "_id": 30,
@@ -357,9 +357,9 @@
       "description": "Come enjoy the best classics.",
       "image": "https://i.postimg.cc/wBfZSZFX/classics.jpg",
       "place": "Stadium",
-      "price": 20,
-      "capacity": 500000,
-      "assistance": 421988
+      "price": 150,
+      "capacity": 50000,
+      "assistance": 42198
     },
     {
       "_id": 31,
@@ -369,21 +369,21 @@
       "description": "We gathered the best opera singers just for you.",
       "image": "https://i.postimg.cc/6pxHgtKJ/opera.jpg",
       "place": "Stadium",
-      "price": 20,
-      "capacity": 500000,
-      "estimate": 500000
+      "price": 200,
+      "capacity": 50000,
+      "estimate": 50000
     },
     {
       "_id": 32,
-      "name": "Reggaeton 2023",
+      "name": "Reggaeton 2026",
       "category": "Concert",
       "date": "2026-01-23",
       "description": "Get ready to dance to the rhythm of the best bands.",
       "image": "https://i.postimg.cc/VvSGQN51/reggaeton.jpg",
       "place": "Stadium",
-      "price": 20,
-      "capacity": 500000,
-      "estimate": 500000
+      "price": 200,
+      "capacity": 50000,
+      "estimate": 50000
     },
     {
       "_id": 33,
@@ -393,7 +393,7 @@
       "description": "A unique tour in the city of lights, get to know one of the most iconic places.",
       "image": "https://i.postimg.cc/nr6dHtQm/paris.jpg",
       "place": "Paris",
-      "price": 10,
+      "price": 100,
       "capacity": 5200,
       "assistance": 3506
     },
