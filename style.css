@@ -118,7 +118,7 @@ h1 {
   border-radius: 1.5rem !important;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
   overflow: hidden;
-  position: relative;
+  position: absolute;
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -137,7 +137,7 @@ h1 {
 
 .card-body {
   padding: 1rem;
-  max-height: 8rem;
+  max-height: 15rem;
   overflow: hidden;
   opacity: 1;
   transition: max-height 0.3s ease, opacity 0.3s ease;
@@ -146,10 +146,6 @@ h1 {
 .card ul {
   display: none;
   padding: 0;
-}
-
-.card:hover .card-body {
-  max-height: 20rem;
 }
 
 .card-title {
@@ -233,8 +229,6 @@ footer .social-media div a {
   cursor: pointer;
 }
 
-
-
 @media (max-width: 1023px) {
   .checkbox-container {
     flex-direction: column-reverse;
@@ -279,17 +273,15 @@ i:hover{
   color: #bb9a2d;
 }
 
-/* Estilos para las tarjetas personalizadas */
 
-/* Contenedor principal */
+/* cards details */
 #main-details {
+  min-height: 75vh;
   max-width: 900px;
   margin: 20px auto;
   padding: 10px;
-  background-color: #f4f4f4; /* Fondo neutro */
 }
 
-/* Tarjeta */
 .custom-card {
   display: flex;
   flex-direction: column;
@@ -302,29 +294,26 @@ i:hover{
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-
 .custom-card-row {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
 }
 
-/* Imagen */
 .custom-card-image {
   flex: 1 1 50%;
   overflow: hidden;
 }
 
 .custom-card-img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 50vh;
   object-fit: cover;
 }
 
-/* Contenido */
 .custom-card-content {
   flex: 1 1 50%;
-  padding: 20px;
+  padding: 44px;
 }
 
 .custom-card-title {
@@ -337,7 +326,7 @@ i:hover{
 .custom-card-description {
   font-size: 1rem;
   line-height: 1.6;
-  margin-bottom: 15px;
+  margin: 30px;
   color: #555;
 }
 
@@ -346,7 +335,9 @@ i:hover{
   color: #888;
 }
 
-/* Media Queries */
+
+
+
 @media (max-width: 768px) {
   .custom-card-row {
     flex-direction: column;
@@ -367,4 +358,10 @@ i:hover{
   .custom-card-description {
     font-size: 0.95rem;
   }
+}
+
+
+.active{
+  text-shadow: #333 !important
+  ;
 }
