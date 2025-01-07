@@ -302,12 +302,7 @@ i:hover{
   transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 }
 
-.custom-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-}
 
-/* Fila de la tarjeta */
 .custom-card-row {
   display: flex;
   flex-wrap: wrap;
