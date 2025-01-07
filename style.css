@@ -274,3 +274,7 @@ form .submit input {
 form .submit input:hover {
   background-color: #bb9a2d;
 }
+
+i:hover{
+  color: #bb9a2d;
+}
