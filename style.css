@@ -225,10 +225,6 @@ footer .social-media div a {
   cursor: pointer;
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> details
 @media (max-width: 1023px) {
   .checkbox-container {
     flex-direction: column-reverse;
@@ -273,14 +269,6 @@ i:hover{
   color: #bb9a2d;
 }
 
-<<<<<<< HEAD
-/*details cards*/
-#main-details {
-  max-width: 80%;
-  margin: 20px auto;
-  padding: 10px;
-  background-color: #f4f4f4; 
-=======
 
 /* cards details */
 #main-details {
@@ -288,7 +276,6 @@ i:hover{
   max-width: 900px;
   margin: 20px auto;
   padding: 10px;
->>>>>>> details
 }
 
 .custom-card {
@@ -370,10 +357,7 @@ i:hover{
 }
 
 
-<<<<<<< HEAD
-=======
 .active{
   text-shadow: #333 !important
   ;
 }
->>>>>>> details

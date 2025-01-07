@@ -6,18 +6,11 @@ fetch('./scripts/endpoint.json')
     const params = new URLSearchParams(queryString);
     const id = params.get("id");
 
-<<<<<<< HEAD
-=======
  
->>>>>>> details
     const cardPushed = data.events.find(card => card._id == id);
 
     const mainDetails = document.getElementById("main-details");
 
-<<<<<<< HEAD
-
-=======
->>>>>>> details
     const cardDiv = document.createElement("div");
     cardDiv.className = "custom-card";
 
