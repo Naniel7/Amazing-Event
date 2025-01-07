@@ -6,19 +6,18 @@ fetch('./scripts/endpoint.json')
     const params = new URLSearchParams(queryString);
     const id = params.get("id");
 
-    // Encuentra el evento correspondiente
     const cardPushed = data.events.find(card => card._id == id);
 
     const mainDetails = document.getElementById("main-details");
 
-    // Crear la estructura de la tarjeta
+
     const cardDiv = document.createElement("div");
     cardDiv.className = "custom-card";
 
     const rowDiv = document.createElement("div");
     rowDiv.className = "custom-card-row";
 
-    // Imagen del evento
+
     const imageDiv = document.createElement("div");
     imageDiv.className = "custom-card-image";
     const img = document.createElement("img");
@@ -27,7 +26,7 @@ fetch('./scripts/endpoint.json')
     img.className = "custom-card-img";
     imageDiv.appendChild(img);
 
-    // Contenido del evento
+
     const contentDiv = document.createElement("div");
     contentDiv.className = "custom-card-content";
 
@@ -39,7 +38,7 @@ fetch('./scripts/endpoint.json')
     description.className = "custom-card-description";
     description.textContent = cardPushed.description;
 
-    // Detalles adicionales
+
     const detailsList = document.createElement("ul");
     detailsList.className = "custom-card-details";
 
@@ -60,17 +59,17 @@ fetch('./scripts/endpoint.json')
     detailsList.appendChild(price);
     detailsList.appendChild(capacity);
 
-    // Agregar elementos al contenido
+
     contentDiv.appendChild(title);
     contentDiv.appendChild(description);
     contentDiv.appendChild(detailsList);
 
-    // Agregar imagen y contenido a la tarjeta
+
     rowDiv.appendChild(imageDiv);
     rowDiv.appendChild(contentDiv);
     cardDiv.appendChild(rowDiv);
 
-    // Agregar la tarjeta al contenedor principal
+
     mainDetails.appendChild(cardDiv);
   })
   .catch(error => console.error("Error fetching data:", error));
